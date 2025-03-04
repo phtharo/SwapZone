@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Top Bar -->
+
+    <!-- Post Content -->
+
+
+    <!-- User Row -->
+
+
+    <EditText
+        android:id="@+id/postInput"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:hint="Add a post to call for donations..."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/avatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:padding="16dp"
+        android:text="swapzone"
+        android:textColor="#2BAE66"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/chartity"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/charity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="247dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="172dp"
+        android:text="Hội từ thiện trẻ em Sài Gòn (Saigon Children’s Charity CIO)"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toEndOf="@+id/chartity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="168dp"
+        android:text="1h - Thanh Khê, Đà Nẵng"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <ImageView
+        android:id="@+id/charityImage"
+        android:layout_width="337dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_content" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#2BAE66"
+        android:padding="16dp"
+        android:text="Đăng bài"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charityImage" />
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="333dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="236dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:text="Nội dung bài viết..."
+        android:textColor="#A16A6565"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Post Button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Avatar -->
+
+    <!-- Tên người đăng -->
+
+    <!-- Địa điểm & thời gian -->
+
+    <!-- Nút menu -->
+
+    <ImageView
+        android:id="@+id/charityImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/charity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/postInput"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:hint="Add a post to call for donations..."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:padding="16dp"
+        android:text="swapzone"
+        android:textColor="#2BAE66"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_post_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Hội từ thiện trẻ em Việt Nam"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="88dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_location_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 giờ - Thanh Khê, Đà Nẵng"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_post_title"
+        tools:layout_editor_absoluteX="89dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Nội dung bài đăng -->
+
+    <!-- Hình ảnh bài đăng -->
+
+    <!-- Nút quyên góp -->
+
+
+    <TextView
+        android:id="@+id/txt_post_content"
+        android:layout_width="372dp"
+        android:layout_height="125dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="197dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_post"
+        android:layout_width="313dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_post_content" />
+
+    <Button
+        android:id="@+id/btn_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2BAE66"
+        android:text="Quyên góp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_post" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

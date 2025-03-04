@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <!-- Layout chứa ImageView và TextView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Organization"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Layout chứa các nút theo chiều dọc -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/org"
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="20dp"
+            android:text="Organization"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/or"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="20dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/addr"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Email"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/mail"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:text="Phone Number"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/phone"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Search"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/search"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Back Page"
+            android:drawableLeft="@drawable/back"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SaveThanh2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Các thuộc tính khác của bạn -->
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SaveThanh2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+</resources>

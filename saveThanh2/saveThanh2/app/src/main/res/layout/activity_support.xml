@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <!-- Layout chứa ImageView và TextView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:background="@android:color/holo_green_dark"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Contact Organization Support Request"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_width="341dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableRight="@drawable/search"
+            android:text="Search"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout chứa các nút theo chiều dọc -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/chat"
+            android:text="Chat"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/mess"
+            android:text="Messange"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Nút tròn với chữ -->
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:text="SOS"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Nút Email -->
+            <Button
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Support Request"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/mail"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/request"
+            android:text="Request"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Nút tròn với chữ -->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/ic_home"
+                android:scaleType="centerInside"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/done"
+                android:scaleType="centerInside"/>
+
+            <!-- Nút Email -->
+            <Button
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Messange"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
