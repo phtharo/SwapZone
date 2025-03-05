@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Dangkiquyengop"
+rootProject.name = "status"
 include(":app")
+ 
