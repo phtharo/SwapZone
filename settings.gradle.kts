@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "swapzone"
+rootProject.name = "Dangkiquyengop"
 include(":app")
- 
