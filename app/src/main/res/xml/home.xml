@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_marginTop="0dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="0dp">
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- SwapZone Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="swapzone"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#126842"
+                android:layout_marginStart="16dp"/>
+
+            <!-- Post Input Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/oet"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+
+                    android:hint="Add a post to call for donations."
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_rounded"
+                    android:textColorHint="#888888"
+                    android:padding="8dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/image_resizer_svgrepo_com" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_rounded"
+                    android:src="@drawable/search_svgrepo_com"
+                    android:padding="4dp" />
+            </LinearLayout>
+            <!-- Organization Logos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_red_cross"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_fidr"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_actionaid"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_byt"/>
+            </LinearLayout>
+
+
+            <!-- Post Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+
+                android:gravity="center_vertical">
+
+                <!-- Phần ảnh chiếm 15% chiều rộng -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"> <!-- Tạo bóng đổ nếu cần -->
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/oet"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Phần còn lại gồm 2 dòng chữ và 1 icon -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                    <!-- Dòng chữ trên -->
