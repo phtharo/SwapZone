@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:id="@+id/rf4cvgtveze4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:paddingTop="40dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="169dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="41dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/rhjhhp9u5e04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="Chat"
+            android:textColor="#344054"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/h1"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saigon Children's Charity CIO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online 17 minutes ago"
+                android:textSize="12sp"
+                android:textColor="#888888"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Chat Bubble -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/cardview_dark_background"
+            android:backgroundTint="#DFF0D8"
+            android:layout_gravity="start"
+            android:elevation="2dp"
+            android:radius="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organization: Hello! Thank you for your interest in our donation program. We are currently accepting items such as well-used clothing, books, and dry food. You can drop them off at [Organization Address] during regular business hours or mail them. Is there anything else you can do to help?"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/chatContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <!-- Message Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingRight="30dp"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_add"
+            android:background="@drawable/textbox"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/sendmess"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbox"
+            android:hint="Send message"
+
+            android:paddingHorizontal="16dp"/>
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Send"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

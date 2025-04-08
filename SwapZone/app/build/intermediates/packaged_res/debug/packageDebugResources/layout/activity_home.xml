@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_marginTop="0dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="0dp">
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- SwapZone Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="swapzone"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#126842"
+                android:layout_marginStart="16dp"/>
+
+            <!-- Post Input Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/oet"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+
+                    android:hint="Add a post to call for donations."
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_rounded"
+                    android:textColorHint="#888888"
+                    android:padding="8dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/image_resizer_svgrepo_com" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_rounded"
+                    android:src="@drawable/search_svgrepo_com"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <!-- Organization Logos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_red_cross"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_fidr"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_actionaid"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_byt"/>
+            </LinearLayout>
+
+
+            <!-- Post Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+
+                android:gravity="center_vertical">
+
+                <!-- Phần ảnh chiếm 15% chiều rộng -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"> <!-- Tạo bóng đổ nếu cần -->
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/oet"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Phần còn lại gồm 2 dòng chữ và 1 icon -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                    <!-- Dòng chữ trên -->
+
+                    <!-- Dòng chữ dưới -->
+
+                    <!-- Icon nằm bên cạnh dòng chữ dưới -->
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SaiGon Chilren's Charity CIO "
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="1h. Thanh Khê, Đà Nẵng"
+                        android:textColor="#888888"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@+id/textView"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:contentDescription="Icon"
+                        android:src="@drawable/friend_svgrepo_com"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="439dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingHorizontal="32dp">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="231dp"
+                    android:text=" Kính gửi: Quý vị mạnh thường quân, các tổ chức, cá nhân và cộng đồng!
+Nhằm chia sẻ khó khăn và mang đến niềm vui cho các em nhỏ có hoàn cảnh khó khăn, chương trình thiện nguyện được phát động với mục tiêu quyên góp quần áo và đồ dùng học tập, giúp các em có thêm động lực đến trường,ắp bước chân trên con đường tri thức.  Chúng tôi tha thiết kêu gọi sự chung tay, góp sức của tất cả quý vị. Mỗi đóng góp dù nhỏ bé đều là nguồn động viên lớn lao, tiếp thêm sức mạnh cho các em nhỏ trên hành trình chinh phục ước mơ.  Ban tổ chức chương trình xin gửi lời cảm ơn chân thành đến tất cả quý vị đã quan tâm, ủng hộ và đóng góp cho chương trình. Sự đồng hành của quý vị là nguồn động viên to lớn, giúp chúng tôi thực hiện thành công chương trình ý nghĩa này.
+Thông tin liên hệ: Email: sio@gmail.com "
+
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/donate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Donate"
+        android:textSize="16sp"
+        android:backgroundTint="#126842"
+        android:textColor="#FFFFFF"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:layout_gravity="end"/>
+    <!-- Bottom Navigation Menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#126842"
+        android:gravity="center">
+
+        <ImageView android:id="@+id/home" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_home" android:layout_marginHorizontal="32dp"/>
+        <ImageView android:id="@+id/shop" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/shop2" android:layout_marginHorizontal="32dp"/>
+        <ImageView android:id="@+id/add" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_add" android:layout_marginHorizontal="32dp"/>
+        <ImageView android:id="@+id/regis" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/regis" android:layout_marginHorizontal="32dp"/>
+        <ImageView android:id="@+id/pro" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_acc" android:layout_marginHorizontal="32dp"/>
+    </LinearLayout>
+</LinearLayout>

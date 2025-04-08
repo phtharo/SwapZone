@@ -1,0 +1,184 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView chứa các phần tử trong danh sách -->
+    <ScrollView
+        android:id="@+id/rcdx7m452qop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Tiêu đề Donate -->
+            <LinearLayout
+                android:id="@+id/reu4qlxc959f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="9dp"
+                    android:src="@drawable/back"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/ro1ft6ysxq2r"
+                    android:textColor="#000000"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Donate" />
+            </LinearLayout>
+
+            <!-- Search Bar (Không có trong Figma, nhưng sẽ để trống ở đây nếu cần) -->
+            <LinearLayout
+                android:id="@+id/rql4aic14fhd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="14dp"
+                android:layout_marginBottom="43dp"
+
+                android:background="@drawable/textbox"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/rrx12av5beyb"
+                    android:layout_width="17dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="9dp"
+                    android:src="@drawable/search_svgrepo_com"
+                    android:scaleType="fitXY" />
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Search organizations..."
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <!-- Vietnam Red Cross Society -->
+            <LinearLayout
+                android:id="@+id/rqi296dafbqj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:id="@+id/r6d3rk2590v7"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_fidr"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/r4uzfpx1q8dd"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Vietnam Red Cross Society" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearHandicap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_red_cross"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textHandicap"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Handicap international
+humanité  inclusion" />
+            </LinearLayout>
+            <!-- DKT International Humanitarian Organization -->
+            <LinearLayout
+                android:id="@+id/linearDKT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_actionaid"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textDKT"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="DKT International Humanitarian Organization" />
+            </LinearLayout>
+
+            <!-- Blue Dragon Children’s Foundation -->
+            <LinearLayout
+                android:id="@+id/linearBlueDragon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_byt"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/textBlueDragon"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Blue Dragon Children’s Foundation" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

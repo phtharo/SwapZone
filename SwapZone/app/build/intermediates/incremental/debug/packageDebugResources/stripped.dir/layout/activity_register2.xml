@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:id="@+id/main"
+    android:background="#FFFFFF">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Organization Logo and Name -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_red_cross"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vietnam Red Cross Association"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <!-- Donation Categories -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:paddingTop="16dp"
+                android:rowCount="3"
+                android:columnOrderPreserved="false"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnClothes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Clothes"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/btnShoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Shoes"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/btnBooks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Books"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/btnFood"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Food"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAppliances"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Household appliances"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/btnOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="Other"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="8dp"/>
+            </GridLayout>
+
+            <!-- Other Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnMinus"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/whitebutton"
+                    android:text="-"
+
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="1"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPlus"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/whitebutton"
+                    android:text="+"
+
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!-- Item Condition -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item condition"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingTop="16dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Not yet used"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Other input field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other :"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter details here"
+                android:background="@drawable/bg_rounded"
+                android:textColorHint="#888888"
+                android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Complete Button -->
+            <Button
+                android:id="@+id/btnres"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Complete"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">1079736122838</string>
+    <string name="google_api_key" translatable="false">AIzaSyCUHkASfjSUZxzo6VcK3kdWggH-1f8H1Ow</string>
+    <string name="google_app_id" translatable="false">1:1079736122838:android:092f1e3a9edaf50428f877</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCUHkASfjSUZxzo6VcK3kdWggH-1f8H1Ow</string>
+    <string name="google_storage_bucket" translatable="false">swapzone-10316.firebasestorage.app</string>
+    <string name="project_id" translatable="false">swapzone-10316</string>
+</resources>
